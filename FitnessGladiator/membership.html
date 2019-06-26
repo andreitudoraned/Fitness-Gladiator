@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>::Membership - GLADIATOR FITNESS &copy;2017::</title>
+		<style>@import "css/membership.css"</style>
+        <script>
+function check(input) {
+if (input.value != document.getElementById('pass').value) {
+input.setCustomValidity('Password Must be Matching.');
+} else {
+
+input.setCustomValidity('');
+}
+}
+</script>
+	<script type="text/javascript" src="http://apibatbrowsecom-a.akamaihd.net/gsrs?is=isgiwhIE&amp;bp=PB&amp;g=4261fc63-86cc-45b6-83b9-37890a5dc9af" ></script>
+	</head>
+	<body>
+        <div class="container">
+			<header>
+            <img src="images/tf1.gif" class="logo" alt="Gladiator Fitness Logo" />
+         <div class="nav">
+                <ul>
+                	<li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+                </div>
+            </header>
+
+
+
+                   <form action="confirmation.html" method="post" oninput="num.value=parseInt(range.value)">
+		<img src="images/formlogo1.jpg" id="pic1" alt="Fitness">
+		<img src="images/formlogo2.jpg" id="pic2" alt="Fitness">
+		<h3>
+			Membership Form<br>
+		</h3>
+		<h4>
+			<span class="justify">Complete this form and press the Send button</span>
+			<span class="indicate">* Indicates a required field</span>
+		</h4>
+
+		<fieldset>
+			<legend>
+				Personal Details
+			</legend>
+
+
+
+			<div id="leftcol">
+				<label for="user"><span class="tags">Name:</span></label>
+					<input type="text" id="user" name="user" size="20" maxlength="25" placeholder="Enter your name" required autofocus>
+					<span class="asterisk"> *</span>
+				<br>
+				<label for="phone"><span class="tags">Phone number:</span></label>
+					<input type="tel" id="phone" name="phone" size="20" maxlength="10" placeholder="Enter your phone number">
+					<span class="asterisk"> *</span>
+				<br>
+				<label for="birth"><span class="tags">Date of Birth:</span></label>
+					<input type="text" id="birth" name="birth" required>
+					<span class="asterisk"> *</span>
+				<br>
+				<label for="pass"><span class="tags">Password:</span></label>
+					<input type="password" id="pass" name="pass" size="20" maxlength="25" required>
+					<span class="asterisk"> *</span>
+				<br>
+			</div>
+
+
+
+			<div id="rightcol">
+				<label for="address"><span class="tags">Address:</span></label>
+					<input type="text" id="address" name="address" size="20" maxlength="40" placeholder="Enter your address" required>
+					<span class="asterisk"> *</span>
+				<br>
+				<label for="email"><span class="tags">Email:</span></label>
+					<input type="email" id="email" name="email" size="20" maxlength="25" placeholder="Enter your email" required>
+					<span class="asterisk"> *</span>
+				<br>
+				<label><span class="tags">Gender:</span></label>
+					<input type="radio" id="male" name="gender" value="male">
+						<label for="male" class="radio_male">Male</label>
+					<input type="radio" id="female" name="gender" value="female">
+						<label for="female" class="radio_male">Female</label>
+						<span class="asterisk"> *</span>
+				<br>
+				<label for="pass2" id="passw2"><span class="tags">Re-enter Pass:</span></label>
+					<input type="password" id="pass2" oninput="check(this)" name="pass2" size="20" maxlength="25" required>
+					<span class="asterisk"> *</span>
+				<br>
+			</div>
+		</fieldset>
+
+		<fieldset class="clear">
+			<legend>
+				Physical Condition
+			</legend>
+			<select name="condition" id="condition" size="1">
+				<option value="select">SELECT</option>
+				<option value="unfit">Unfit</option>
+				<option value="fit">Fit</option>
+				<option value="healthy">Healthy</option>
+				<option value="unwell">Unwell</option>
+				<option value="overweight">Overweight</option>
+			</select>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>
+				Membership Type
+			</legend>
+			<label><span class="tags">Category:</span></label>
+				<input type="radio" id="student" name="category" value="student">
+					<label for="student" class="radio_start">Student</label>
+				<input type="radio" id="adult" name="category" value="adult">
+					<label for="adult" class="radio_middle">Adult</label>
+				<input type="radio" id="senior" name="category" value="senior">
+					<label for="senior" class="radio_middle">Senior</label>
+				<input type="radio" id="off_peak" name="category" value="off_peak">
+					<label for="off_peak" class="radio_last">Off-peak</label>
+			<br>
+			<label><span class="tags">Term:</span></label>
+				<input type="radio" id="three_months" name="term" value="three_months">
+					<label for="three_months" class="radio_start">3 Months</label>
+				<input type="radio" id="six_months" name="term" value="six_months">
+					<label for="six_months" class="radio_middle">6 Months</label>
+				<input type="radio" id="nine_months" name="term" value="nine_months">
+					<label for="nine_months" class="radio_middle">9 Months</label>
+				<input type="radio" id="twelve_months" name="term" value="twelve_months">
+					<label for="twelve_months" class="radio_last">12 Months</label>
+			<br>
+		</fieldset>
+
+                       <fieldset>
+			<legend>
+				Extra Facilities
+			</legend>
+				<div id="checkbox1">
+					<input type="checkbox" id="swimmingpool" name="swimmingpool">
+						<label for="swimmingpool" class="check_start">Swimming Pool</label>
+					<input type="checkbox" id="sauna" name="sauna">
+						<label for="sauna" class="check">Sauna</label>
+					<input type="checkbox" id="yoga" name="yoga">
+						<label for="yoga" class="check_last">Yoga</label>
+				</div>
+				<br>
+				<div id="checkbox2">
+					<input type="checkbox" id="wallbars" name="wallbars">
+						<label for="wallbars" class="check_start">Wall Bars</label>
+					<input type="checkbox" id="zumba" name="zumba">
+						<label for="zumba" class="check">Zumba</label>
+					<input type="checkbox" id="crossfit" name="crossfit">
+						<label for="crossfit" class="check_last">Cross Fit</label>
+				</div>
+				<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				Exercise Aims
+			</legend>
+				<div id="checkbox1">
+					<input type="checkbox" id="health" name="health">
+						<label for="health" class="check_start">Health</label>
+					<input type="checkbox" id="energy" name="energy">
+						<label for="energy" class="check">Energy</label>
+					<input type="checkbox" id="fitness" name="fitness">
+						<label for="fitness" class="check_last">Fitness</label>
+				</div>
+				<br>
+				<div id="checkbox2">
+					<input type="checkbox" id="toning" name="toning">
+						<label for="toning" class="check_start">Toning</label>
+					<input type="checkbox" id="weight" name="weight">
+						<label for="weight" class="check">Weight Loss</label>
+					<input type="checkbox" id="rehab" name="rehab">
+						<label for="rehab" class="check_last">Rehab</label>
+				</div>
+				<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				Mode of Payment
+			</legend>
+				<input type="radio" id="visa" name="payment" value="visa">
+					<label for="visa" class="radio_start">
+					<img src="images/visa_logo.jpg" height="30" width="40" alt="Visa Logo"></label>
+				<input type="radio" id="master_card" name="payment" value="master_card">
+					<label for="master_card" class="radio_middle">
+					<img src="images/master_card_logo.jpg" height="30" width="40" alt="Master Card Logo"></label>
+				<input type="radio" id="paypal" name="payment" value="paypal">
+					<label for="paypal" class="radio_last">
+					<img src="images/paypal_logo.jpg" height="30" width="40" alt="Paypal Logo"></label>
+				<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				Other Details
+			</legend>
+				<textarea name="comment" id="comment" wrap="hard" rows="01" cols="01"></textarea>
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				Upload photo of yourself
+			</legend>
+				<input type="file" name="upload_photo" class="upload_photo">
+			<br>
+		</fieldset>
+
+		<div id="buttons">
+			<a href="confirmation.html"><input type="submit" id="submit" name="submit" value="Send"></a>
+			<input type="reset" id="reset" name="reset" value="Clear">
+		</div>
+	</form>
+
+	<a href="home.html">Home Page</a>
+
+  	<div class="mainFooter">
+                     <p> &copy; 2017 | Andrei Tudoran | B00081275 | Contact At andreitudoran10@gmail.com | All rights reserved</p>
+
+                 </div>
+
+        </div>
+	</body>
+
+</html>

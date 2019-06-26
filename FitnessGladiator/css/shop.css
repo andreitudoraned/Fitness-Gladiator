@@ -1,0 +1,128 @@
+body {
+		background-color: black;
+		
+		font-weight: 400;
+		font-size: 15px;
+		color: white;
+		overflow-x: hidden;
+		transition:all 0.5s linear;
+		margin: 0;
+}
+
+a {
+		font-size: 18px;
+		font-weight: normal;
+		margin: 0;
+		outline: none;
+		color: yellow;
+		font-family: Calibri, serif;
+		text-shadow: 1px 1px 1px black;
+		text-decoration: none;
+		transition: all 0.4s ease-out;
+}
+
+a:hover{
+		color:red;
+}
+
+p {
+		font-size: 1em;
+		margin: 0;
+		color: white;
+		font-family: Calibri, serif;
+		margin-top:6px;
+}
+
+img {
+    		border-radius: .1em .6em .1em .6em;
+		max-width:100%;
+		height:auto;
+}
+	  
+.container{
+		width: 100%;
+		position: relative;
+     margin-left:auto;
+        margin-right:auto;
+        width: 1350px;
+    
+}
+
+.clr{
+		clear: both;
+		padding: 0;
+		height: 0;
+		margin: 0;
+}
+
+.logo {
+		margin-top:-1em;
+    		margin-bottom: 1em;
+		max-width:100%;
+		height:auto;
+}
+
+.container header{
+		padding: 10px;
+		position: relative;
+		display: block;
+		height:auto;
+		text-align:center;
+	    	margin-top: 0.08em;
+    		border-bottom:4px solid red;
+}
+
+.nav ul {  
+    		margin:0 
+    		auto;
+    		border-top:4px solid red;
+    		padding-top: 1em;
+}
+
+.nav ul li {
+		list-style:none;
+		display:inline-block;
+		margin-top:10px;
+		margin:0 auto;}
+	
+.nav ul li a {
+		text-decoration:none;
+		font-size: 21px;
+		font-weight: 800;
+		color: white;
+		font-family: Calibri, serif;
+		outline:none;
+		padding:6px 20px 13px 0;
+		text-shadow: 1px 1px 1px black;
+		transition: all 0.2s ease-out;
+}
+
+.nav ul li a:hover {
+		color: firebrick; 
+	}
+
+
+.nav ul li a.active{
+		color: firebrick; 
+    		text-shadow: 1px 1px 1px darkred;
+}
+
+footer{
+    		position: relative; 
+    		width: 100%;
+    		margin: 0 auto; 
+    		display: block; 
+    		overflow:visible;
+    		text-align: center;
+}
+
+.mainFooter {
+    		font-size: 16px;
+    		display: inline-block; 
+    		margin: 0 auto; 
+    		border-top:4px double lightyellow; 
+    		padding-bottom: 1em;
+    		width:100%; 
+    		margin-top:.3em; 
+ 
+}

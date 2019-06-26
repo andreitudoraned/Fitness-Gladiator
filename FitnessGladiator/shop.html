@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<title>Shop - GLADIATOR FITNESS &copy;2017::</title>
+		<style>@import "css/shop.css"</style>
+	<script type = "text/javascript">
+	function calculate()
+	{
+	Qty1 = 0;  Qty2 = 0;  Qty3 = 0;  Qty4 = 0;  Qty5 = 0;  Qty6 = 0;  Qty7 = 0;
+	Tot1 = 0;  Tot2 = 0;  Tot3 = 0;  Tot4 = 0;  Tot5 = 0;  Tot6 = 0;  Tot7 = 0;
+
+	Prc1= 20.00; Prc2= 15.00; Prc3= 22.00; Prc4= 20.00; Prc5= 5.00; Prc6= 3.00; Prc7= 10.00;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty1").value > "")
+	{
+		Qty1 = document.getElementById("qty1").value;
+	}
+	Tot1 = eval(Qty1) * eval(Prc1);
+	Tot1 = Tot1.toFixed(2);
+	document.getElementById("total1").value = Tot1;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty2").value > "")
+	{
+		Qty2 = document.getElementById("qty2").value;
+	}
+	Tot2 = eval(Qty2) * eval(Prc2);
+	Tot2 = Tot2.toFixed(2);
+	document.getElementById("total2").value = Tot2;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty3").value > "")
+	{
+		Qty3 = document.getElementById("qty3").value;
+	}
+	Tot3 = eval(Qty3) * eval(Prc3);
+	Tot3 = Tot3.toFixed(2);
+	document.getElementById("total3").value = Tot3;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty4").value > "")
+	{
+		Qty4 = document.getElementById("qty4").value;
+	}
+	Tot4 = eval(Qty4) * eval(Prc4);
+	Tot4 = Tot4.toFixed(2);
+	document.getElementById("total4").value = Tot4;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty5").value > "")
+	{
+		Qty5 = document.getElementById("qty5").value;
+	}
+	Tot5 = eval(Qty5) * eval(Prc5);
+	Tot5 = Tot5.toFixed(2);
+	document.getElementById("total5").value = Tot5;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty6").value > "")
+	{
+		Qty6 = document.getElementById("qty6").value;
+	}
+	Tot6 = eval(Qty6) * eval(Prc6);
+	Tot6 = Tot6.toFixed(2);
+	document.getElementById("total6").value = Tot6;
+	/////////////////////////////////////////////////////////////////////////////
+	if (document.getElementById("qty7").value > "")
+	{
+		Qty7 = document.getElementById("qty7").value;
+	}
+	Tot7 = eval(Qty7) * eval(Prc7);
+	Tot7 = Tot7.toFixed(2);
+	document.getElementById("total7").value = Tot7;
+	/////////////////////////////////////////////////////////////////////////////
+	Totamt = eval(Tot1) + eval(Tot2) + eval(Tot3) + eval(Tot4) + eval(Tot5) + eval(Tot6) + eval(Tot7);
+  	Totamt = Totamt.toFixed(2);
+  	document.getElementById("GrandTotal").value = Totamt;
+  	}
+
+  	function validate()
+  	{
+  	alert("You will now be brought to the payment screen");
+	}
+</script>
+</head>
+<body>
+	<div class="container">
+				<header>
+	            <img src="images/tf1.gif" class="logo" alt="Gladiator Fitness Logo" />
+	                <div class="nav">
+	                <ul>
+	                	<li><a href="index.html" class="active">Home</a></li>
+	                    <li><a href="gallery.html">Gallery</a></li>
+	                    <li><a href="schedule.html">Schedule</a></li>
+	                    <li><a href="membership.html">Membership</a></li>
+	                    <li><a href="contact.html">Contact</a></li>
+	                    <li><a href="shop.html">Shop</a></li>
+	                    <li><a href="sitemap.html">Sitemap</a></li>
+	                </ul>
+	                </div>
+            </header>
+		<br>
+		<hr>
+		<form action="shop.html" method="post">
+		<table id="shopping">
+			<tr>
+				<th>Item</th>
+				<th>Description</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Total</th>
+			</tr>
+			<tr class="alt">
+				<td class="blank" align="center"><img src="images/aminoacids.jpg" width="160" height="80"></td>
+				<td>100% Pure Amino Acids 340g</td>
+				<td><input type="text" id="qty1" size="3" onchange="calculate()"></td>
+				<td>&euro; 20.00</td>
+				<td>&euro;<input type="text" id="total1" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr>
+				<td class="blank" align="center"><img src="images/creatine.jpg" width="130" height=""></td>
+				<td>Creatine Powder 400g</td>
+				<td><input type="text" id="qty2" size="3" onchange="calculate()"></td>
+				<td>&euro; 15.00</td>
+				<td>&euro;<input type="text" id="total2" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr class="alt">
+				<td class="blank" align="center"><img src="images/prework.jpg" width="130" height="80"></td>
+				<td>Pre-WorkOut Powder 410g</td>
+				<td><input type="text" id="qty3" size="3" onchange="calculate()"></td>
+				<td>&euro; 22.00</td>
+				<td>&euro;<input type="text" id="total3" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr>
+				<td class="blank" align="center"><img src="images/protein.jpg" width="130" height="80"></td>
+				<td>Protein Powder 400g</td>
+				<td><input type="text" id="qty4" size="3" onchange="calculate()"></td>
+				<td>&euro; 20.00</td>
+				<td>&euro;<input type="text" id="total4" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr class="alt">
+				<td class="blank" align="center"><img src="images/shaker.jpg" width="130" height="80"></td>
+				<td>Drink Shaker w/Ball</td>
+				<td><input type="text" id="qty5" size="3" onchange="calculate()"></td>
+				<td>&euro; 5.00</td>
+				<td>&euro;<input type="text" id="total5" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr>
+				<td class="blank" align="center"><img src="images/towels.jpg" width="130" height="130"></td>
+				<td>Super Absorbant Towels</td>
+				<td><input type="text" id="qty6" size="3" onchange="calculate()"></td>
+				<td>&euro; 3.00</td>
+				<td>&euro;<input type="text" id="total6" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr class="alt">
+				<td class="blank" align="center"><img src="images/weightliftingbelt.jpg" width="130" height="80"></td>
+				<td>Weight Lifting Belts</td>
+				<td><input type="text" id="qty7" size="3" onchange="calculate()"></td>
+				<td>&euro; 10.00</td>
+				<td>&euro;<input type="text" id="total7" size="12" onchange="calculate()"></td>
+			</tr>
+			<tr class="total">
+				<td colspan="4"><strong>TOTAL<strong></td>
+				<td>&euro;<input type="text" id="GrandTotal" size="15" onchange="calculate()"></td>
+			</tr>
+			<tr>
+				<td colspan="5" class="buttons" align="center"><input type="submit" value="Submit" onClick="validate()"><input type="reset" value="Reset">
+			</tr>
+		</table>
+		<br>
+		</form>
+			<div class="clr"></div>
+
+						<footer>
+			                <div class="mainFooter">
+			                     <p> &copy; 2017 | Andrei Tudoran | B00081275 | Contact At andreitudoran10@gmail.com | All rights reserved</p>
+
+			                 </div>
+						</footer>
+            </div>
+		<hr>
+	</div>
+</body>
+</html>
